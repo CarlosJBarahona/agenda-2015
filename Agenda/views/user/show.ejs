@@ -1,0 +1,34 @@
+<div class="container usuarios-cont">
+
+<div class="cont-form-usuarios">
+
+<div class="form-usuarios">
+
+	<h3 class="infousers">Informacion del Usuario</h3>
+
+
+<div class="cont-campos-agenda">
+    <div class="campos-agenda">Nombre:</div>
+	<div class="campos-agenda">Apellidos:</div>
+	<div class="campos-agenda">Correo:</div>
+	<div class="campos-agenda">Telefono:</div>
+	<div class="campos-agenda">Direccion:</div>	
+</div>
+
+<div class="cont-datos-agenda">
+    <div class="milistadiv"><%= user.name %></div>
+    <div class="milistadiv"><%= user.lastname %></div>
+    <div class="milistadiv"><%= user.telephone %></div>
+    <div class="milistadiv"><%= user.email %></div>
+    <div class="milistadiv"><%= user.addres %></div>
+</div><!--cont-datos-agenda-->
+
+	<form action="/user/edit/<%=user.id %>" method="POST" accept-charset="utf-8" class="miform-users">
+		<button type="submit" class="btn btn-success">Editar</button>
+	</form>
+	
+</div><!--form usuarios-->
+
+</div><!--cont form usuarios-->
+
+</div>

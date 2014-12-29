@@ -1,0 +1,31 @@
+<br>
+<br>
+
+<form action="/user/update/<%=user.id%>" method="POST" class="form-signin">
+
+	<h2 class="form-signin-heading">EDITAR</h2>
+
+	<div class="control-group">
+		<input type="text" class="form-control" value="<%= user.name %>" name="name" >
+	</div>
+
+	<div class="control-group">
+		<input type="text" class="form-control" value="<%= user.lastname %>" name="lastname" >
+	</div>
+
+	<div class="control-group">
+		<input type="text" class="form-control" value="<%= user.telephone %>" name="telephone" >
+	</div>
+
+	<div class="control-group">
+		<input type="email" class="form-control" value="<%= user.email %>" name="email" >
+	</div>
+
+	<div class="control-group">
+		<input type="text" class="form-control" value="<%= user.addres %>" name="addres" >
+	</div>
+
+	<br />
+
+	<input type="submit" class="btn btn-lg btn-primary btn-block" value="Guardar Cambios" >
+</form>

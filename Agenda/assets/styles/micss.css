@@ -1,0 +1,16 @@
+.form-signin{width: 40%;background-color: rgb(241,241,241);margin: auto;text-align: center;}
+.form-control{width: 80%;margin: auto;margin-top: 5px; margin-bottom: 5px;}
+.mibarra{clear: both;}
+.miboton{width: 80px; height: 50px;color: white;vertical-align: middle;}
+.miboton:hover{background-color: #0D4075;color: white;}
+.textboton{vertical-align: middle;color: white;text-align: center;}
+.usuarios-cont{width: 60%;height: 580px;margin: auto;text-align: center;}
+.cont-form-usuarios{display: table;background-color: #021A4A;vertical-align: middle;color: white;height: 100%;width: 100%}
+.form-usuarios{display: table-cell;vertical-align: middle;}
+.cont-campos-agenda{width: 50%;height: auto;float: left;}
+.cont-datos-agenda{width: 50%;height: auto;float: left;}
+.campos-agenda{margin: 10px 20px 10px 0;text-align: right;text-transform: uppercase;}
+.milistadiv{margin: 10px 0 10px 20px;text-align: left;}
+.editar-btn-show{background-color: #2C7724}
+.editar-btn-show:hover{background-color: #4CB736;color: white}
+.text-miagenda{text-align: center;}

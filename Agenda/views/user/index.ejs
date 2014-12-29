@@ -1,0 +1,24 @@
+<div class="container">
+	<h2 class="text-miagenda">Mi Agenda 2015</h2>
+	<table class="table table-hover">
+		<th class="datos-buscar">Nombre</th>
+		<th class="datos-buscar">Apellidos</th>
+		<th colspan="2" class="text-center">Acciones</th>
+		<% _.each(users, function(user) {%>
+		<tr>
+			<td class="datos-registro"><%= user.name %></td>
+			<td class="datos-registro"><%= user.lastname %></td>
+			<td>
+				<a href="/user/show/<%=user.id%>" class="btn btn-success btn-sm">Ver Datos</a>
+			</td>
+			<td>
+				<form action="/user/destroy/<%= user.id %>" method="POST" accept-charset="utf-8" >
+				<input type="hidden" name="_method" value="delete">
+				<input type="submit" class="btn btn-sm btn-danger" value="eliminar">
+				<input type="hidden" name="_csrf" value="<%= _csrf %>">
+				</form>
+			</td>
+		</tr>
+		<% }) %>
+	</table>
+</div>
