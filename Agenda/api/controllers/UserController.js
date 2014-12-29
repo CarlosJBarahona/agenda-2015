@@ -23,7 +23,10 @@
 
  		User.create(userObj, function(err,user){
  			if(err){
- 				console.log(err);
+ 				console.log( JSON.stringify(err));
+ 				req.session.flash={
+ 					err: err
+ 				}
  				return res.redirect('user/new');
  			}
  			return res.redirect('user/show/'+user.id);

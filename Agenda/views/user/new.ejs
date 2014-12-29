@@ -1,6 +1,15 @@
 
 <br>
 <br>
+<div class="container">
+
+<% if(flash && flash.err){ %>
+<ul class="alert alert-success">
+	<% Object.keys(flash.err).forEach(function(error){ %>
+		<li><%- JSON.stringify(flash.err[error]) %></li>
+		<% }) %>
+</ul>
+<% } %>
 
 <form action="/user/create" method="POST" class="form-signin">
 
@@ -30,3 +39,5 @@
 
 	<input type="submit" class="btn btn-lg btn-primary btn-block" value="Agregar Contacto" >
 </form>
+
+</div>
